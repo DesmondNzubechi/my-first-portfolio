@@ -1,0 +1,626 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'poppins', sans-serif;
+	color: white;
+	background: darkblue;
+	width: 100%;
+	overflow-x:hidden ;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, darkblue, blue, darkblue);
+    box-shadow: 0px 1px 1px lightgray;
+	padding: 15px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+}
+#logo h1{
+	background:white;
+	border-radius: 100px 0 ;
+	padding: 5px;
+	font-size: 2rem;
+	color: darkblue;
+	/*text-decoration: underline darkblue 5px;*/
+	font-weight: 600;
+}
+#navi{
+	justify-self: flex-end;
+}
+#navi ul{
+	display: flex;
+	justify-content: space-around;
+	text-align: right;
+	padding-top: 10px;
+
+}
+ul li{
+	list-style: none;
+	font-weight: 300;
+	padding: 0 10px;
+}
+#wa img{
+	z-index: 10;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+#btns{
+	display: flex;
+	justify-content: center;
+	margin: 0 15px;
+}
+#btns img{
+	display: none;
+width: 40px;
+height: 40px;
+background: whitesmoke;
+border-radius: 10px;
+padding: 2px;
+margin: 5px;
+}
+#home{
+	margin-top: 50px;
+   object-fit: cover;
+   padding: 5px 20px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+#social img{
+	width: 40px;
+	height: 50px;
+	border-radius: 100px;
+	box-shadow: 2px 2px 4px lightgray, -2px -2px 4px lightgray;
+	padding: 10px;
+} 
+#intro{
+	padding: 20px;
+	align-self: center;
+}
+#intro h4{
+	font-weight: 200;
+	font-size: 2rem;
+	margin: 10px;
+	font-style: italic;
+}
+#intro p{
+	font-size: 3rem;
+}
+#intro strong{
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: darkorange;
+}
+.intr h3{
+	margin:;
+	padding: 20px 0;
+	font-size: 2.5rem;
+}
+#me img{
+	margin-top: 50px;
+	height: 80vh;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px white, 0 -2px 5px lightgray;
+	/*border: 2px dotted white;*/
+	
+
+}
+#me:hover img{
+	transform: translateY(-20px);
+	transition: 1s;
+}
+/*#me{
+border-radius: 10px;
+	box-shadow: 0 2px 5px white, 0 -2px 5px lightgray;
+
+}*/
+.more{
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+.more .read{
+	background: white;
+	color: blue;
+
+}
+.more a{
+	font-weight: 600;
+     border-radius: 10px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	background: blue;
+	color: white;
+	padding: 10px;
+	margin: 20px;
+	
+}
+#about{
+	background: white;
+	color: darkblue;
+	margin: 0;
+	padding: 0px;
+	width: 100%;
+}
+#about h1{
+	text-align: center;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 4rem;
+}
+.full{
+	display: flex;
+	justify-content: space-around;
+	font-family: 'oswald', sans-serif;
+	padding: 20px;
+}
+.who{
+	font-size: 2rem;
+	align-self: center;
+}
+.svg img{
+	width: 400px;
+	height: 300px;
+}
+.i{
+	margin-top: 10px;
+}
+.hir{
+	text-decoration: none;
+	font-size: 2rem;
+	color: pink;
+	background:blue;
+	box-shadow: 3px 3px 5px darkblue, -3px -3px 5px darkblue;
+	border: none;
+	padding: 10px;
+	margin: 20px 10px;
+	border-radius: 5px;
+}
+.hir:hover{
+	background: white;
+	color:blue ;
+	border-radius: 20px;
+
+	transform: translateY(5px);
+	transition: .5s;
+}
+.down:hover{
+	background: lightblue;
+	opacity: 95%;
+	transition: .5s;
+	transform: translateY(5px);
+}
+.down{
+	text-decoration: none;
+	font-size: 2rem;
+	color: darkblue;
+	border: none;
+	box-shadow: 3px 3px 5px darkblue, -3px -3px 5px darkblue;
+	background: lightblue;
+	padding: 10px;
+	margin: 20px 10px;
+	border-radius: 5px;
+}
+#services{
+	background: linear-gradient(to bottom, white, darkblue,darkblue, darkblue, darkblue);
+text-align: center;
+
+padding: 40px 10px;
+}
+.service{
+	margin-top: 30px;
+	padding: 20px;
+	}
+.service h1{
+text-transform: uppercase;
+color: white;
+font-size: 3rem;
+text-shadow: 2px 2px 2px blue, -2px -2px 2px blue;
+}
+.service h4{
+	margin: 10px;
+	font-weight: 600;
+	color: white;
+	opacity: 70%;
+	font-size: 1.5rem;
+}
+#mys{
+	display: flex;
+	justify-content: space-around;
+	
+}
+#mys div{
+	box-shadow: 5px 5px 10px blue, -5px -5px 10px blue;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	background: white;
+	color: darkblue;
+}
+#mys div:hover{
+	background: darkorange;
+	color:black ;
+	transform: translateY(10px);
+	transition: .5s;
+	
+}
+#mys h2{
+	margin: 15px;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+#mys p{
+	font-weight: 600;
+	opacity: 90%;
+	font-size: 1.3rem;
+	font-family: 'oswald', sans-serif;
+}
+#skill p{
+	color: darkblue;
+	font-weight: 700;
+}
+#skill{
+	padding-bottom:50px;
+	font-family: 'roboto', sans-serif;
+	background: white;
+
+}
+.d{
+	display: flex;
+	justify-content: space-around;
+}
+.my{
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	text-align: center;
+	color: darkblue;
+}
+.html, .java, .css{
+	margin: 20px;
+}
+.d h5{
+	padding-left: 10%;
+	color: blue;
+	padding-bottom: 1%;
+	font-size: 1.5rem;
+	/*text-shadow: 5px 5px 10px blue, -5px -5px 10px blue;*/
+}
+.hcj{
+	align-self: center;
+
+
+}
+#navi a:hover{
+	background: white;
+	color: darkblue;
+	padding: 10px;
+	transform: translateY(10px);
+	transition: .5s;
+	border-radius: 5px;
+}
+#wa img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	position: fixed;
+	bottom: 100px;
+	left: 10px;
+}
+#wa img:hover{
+	width: 52px;
+	height: 52px;
+	transition: 1s;
+	transform: translateY(10px);
+	box-shadow: 2px 2px 2px white, -2px -2px 2px lightgray;
+}
+.js p{
+ color: darblue;
+}
+.js{
+	font-size: 1.7rem;
+    align-self: center;
+    justify-self: center;
+    border-left: solid 2px darkorange;
+    padding-left: 20px;
+    padding-top: 20px;
+   
+}
+.js strong{
+	font-weight: 900;
+}
+.bar{
+	width: 500px;
+display: block;
+border-radius: 10px;
+height: 20px;
+box-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+.bar:hover{
+	transform: translateX(10px);
+	transition: 1s;
+	background: ghostwhite;
+	box-shadow: 2px 2px 5px darkorange, -2px -2px 5px darkorange;
+
+}
+.html .progress{
+	display: block;
+	text-align:;
+	width: 90%;
+	height: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to right, blue, darkblue);
+}
+.css .progress{
+	display: block;
+	text-align:;
+	width: 80%;
+	height: 20px;
+	border-radius: 10px;
+	background: linear-gradient(to right, blue, darkblue);
+}
+.java .progress{
+	display: block;
+	text-align:;
+	width: 40%;
+	height: 20px;
+	border-radius: 10px;
+	background:linear-gradient(to right, blue, darkblue);
+}
+.con{
+	margin-bottom: 50px;
+}
+.con h1{
+	text-transform: uppercase;
+	color: blue;
+	font-size: 3rem;
+	padding: 1rem;
+	font-weight: 1000;
+	text-decoration: underline 2px yellow;
+}
+#contact h3{
+	margin-top: 50px;
+	font-weight: 1000;
+	color: white;
+	text-decoration: underline 2px solid yellow;
+}
+#socia img{
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	margin: 10px;
+}
+.co{
+	height:70vh ;
+	backdrop-filter: blur(2px);
+	margin-top: 20px;
+
+	box-shadow: 2px 2px 2px lightgray, -2px -2px 2px gray;
+}
+.info{
+	display: flex;
+	justify-content: space-around;
+
+}
+.info strong{
+	font-weight: 900;
+	color: yellow;
+	z-index: 10;
+}
+.info div{
+	background: blue;
+	opacity: 70%;
+	backdrop-filter: blur(5px);
+	padding: 10px;
+	font-size: 1.2rem;
+	margin: 5px;
+	color: yellow;
+	font-weight: 1000;
+	border-radius: 10px;
+	border: 1px solid yellow;
+}
+#socia img:hover{
+	transition: 1s;
+	padding: 2px;
+	box-shadow: 4px 4px 8px lightgray, -4px -4px 8px lightgray;
+}
+#contact{
+	background: url(html.JPG);
+	height: 70vh;
+
+	width: 100%;
+	/*padding-top: 80px;*/
+	background-position: center;
+	text-align: center;
+	color: darkorange;
+	font-weight: 700;
+}
+.info div:hover{
+	background: blue;
+	color: white;
+	transition: 1s;
+	border-radius: 20px;
+}
+#project h1{
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 1000;
+	margin: 15px;
+	text-transform: uppercase;
+
+}
+.prove{
+	display: flex;
+	justify-content: center;
+}
+#project{
+	margin-top: 100px;
+}
+#project img{
+	box-shadow: 2px 2px 5px lightgray, -2px -2px 5px white;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 20px;
+}
+#project img:hover{
+	box-shadow: 10px 10px 16px blue, -10px -10px 16px blue;
+	transition: 1s;
+	border-radius: 20px;
+transform: translateY(10px);
+}
+footer{
+	background: #e8d0c5;
+	color: darkblue;
+	text-align: center;
+}
+.copy p{
+	padding: 10px;
+	font-weight: 700;
+	font-size: 1rem;
+}
+.copy .dv{
+	padding: 10px;
+	color: blue;
+	font-size: 600;
+	margin: 0 10px;
+	box-shadow:inset 2px 2px 5px gray, inset -2px -2px 5px white;
+	border-radius: 5px;
+}
+@media (max-width: 768px){
+
+	#navi{
+		transition: 1s;
+		position: fixed;
+		right: -300px;
+		top: 70px;
+		padding: 20px;
+		box-shadow: 0 1px 1px lightgray;
+		background: darkblue;
+		opacity: 95%;
+	}
+	#home{
+		margin-top: 120px;
+		display: block;
+		text-align: center;
+	}
+	#navi ul{
+	 	display: block;
+	 	z-index: 5;
+	 	text-align: center;
+	 	
+	 	
+	 }
+	 #logo h1{
+	 	
+	 	justify-content: center;
+	 	text-align: center;
+	 }
+	 ul li{
+
+	 	font-size: 2rem;
+	 	display: block;
+	 	margin: 20px;
+	 	z-index: 10;
+	 }
+	 #btns img:hover{
+	 	padding:;
+	 	box-shadow: 5px  5px 10px white;
+	 	transition: .5s;
+	 }
+	 #btns img{
+	 	display: block;
+	 	position: fixed;
+	 	top: 10px;
+	 	right: 20px;
+	 }
+	 #close{
+	 	display: none;
+	 }
+	 #about{
+	 	display: block;
+	 	justify-content: center;
+	 	margin: 0;
+	 	
+	 }
+	 .hir, .down{
+	 	padding: 5px;
+	 	font-size: 1.5rem;
+	 	border-radius: 5px;
+	 	
+	 }
+	 .who{
+	 	font-size: 1.5rem;
+	 }
+	 .full{
+	 	display: block;
+	 	text-align: center;
+	 }
+	 #mys h1{
+	 	font-size: 1.8rem;
+	 }
+	 #mys div{
+
+	 	padding: 10px;
+	 	box-shadow: 3px 3px 5px blue, -3px -3px 5px blue;
+	 	margin: 30px;
+	 }
+	 #mys p{
+
+	 font-size: 1.2rem;
+	 }
+
+	 #services #mys{
+	 	display: block;
+	 	text-align: center;
+	 	justify-content: center;
+	 }
+
+	 .d{
+	 	display: block;
+	 	text-align: center;
+	 	padding: 20px;
+	 }
+	 body{
+	 	width: fit-content;
+	 }
+	 .bar{
+	 	width: 100%;
+	 }
+	 .js{
+	 	border: none;
+	 }
+	 .info{
+	 	display: block;
+	 	text-align: center;
+	 	justify-content: center;
+	 }
+	 .info div{
+	 	margin: 20px;
+	 	color: white;
+	 }
+	 .info strong{
+	 	color: yellow;
+	 }
+	 .prove{
+	 	display: block;
+	 	text-align: center;
+	 	align-content: center;
+	 	justify-content: center;
+	 }
+
+}
